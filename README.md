@@ -1,11 +1,11 @@
 # AFSESAB — Automação Inteligente de Consultas de LME
 
-**Grupo:** [PREENCHER]  
-**Integrantes (completar nome completo e matrícula):**
-- Caio Victor Lopes Serra — Matrícula: [PREENCHER]
-- Diogenes [NOME COMPLETO] — Matrícula: [PREENCHER]
-- Kleber Lucas [NOME COMPLETO] — Matrícula: [PREENCHER]
-- Carlos Henrique [NOME COMPLETO] — Matrícula: [PREENCHER]
+**Grupo:** 
+**Integrantes:**
+- Caio Victor 
+- Diogenes 
+- Kleber Lucas 
+- Carlos Henrique 
 
 ## Objetivo
 Prototipar uma ferramenta que combine Python, MongoDB, LLM e RPA para apoiar consultas autorizadas de registros de LME por município, medicamento, vigência e status. A entrega usa **somente dados sintéticos**. A integração com o AFSESAB real depende de autorização institucional e validação técnica; até lá, o RPA é simulado.
