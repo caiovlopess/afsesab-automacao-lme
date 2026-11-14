@@ -1,0 +1,33 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: lme-mongo
+    restart: unless-stopped
+    ports:
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      TEST_FARMACEUTICO_SAI_PASSWORD: ${TEST_FARMACEUTICO_SAI_PASSWORD:-}
+      TEST_AUDITOR_PASSWORD: ${TEST_AUDITOR_PASSWORD:-}
+      TEST_IA_PASSWORD: ${TEST_IA_PASSWORD:-}
+      TEST_WORKFLOW_AUDIT_PASSWORD: ${TEST_WORKFLOW_AUDIT_PASSWORD:-}
+    volumes:
+      - mongo_data:/data/db
+      - ./scripts:/scripts:ro
+
+  n8n:
+    image: n8nio/n8n
+    container_name: lme-n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      GENERIC_TIMEZONE: America/Bahia
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./docs/regras_lme:/home/node/regras_lme:ro
+
+volumes:
+  mongo_data:
+  n8n_data:

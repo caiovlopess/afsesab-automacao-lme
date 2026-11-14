@@ -1,0 +1,25 @@
+﻿
+=== Medicamento + status ===
+{
+  consulta: 'Medicamento + status',
+  etapa: 'sem indice (COLLSCAN forcado)',
+  winningPlanStages: [
+    'COLLSCAN'
+  ],
+  nReturned: 404,
+  docsExamined: 10000,
+  keysExamined: 0,
+  executionTimeMillis: 3
+}
+{
+  consulta: 'Medicamento + status',
+  etapa: 'com indice',
+  winningPlanStages: [
+    'FETCH',
+    'IXSCAN'
+  ],
+  nReturned: 404,
+  docsExamined: 404,
+  keysExamined: 404,
+  executionTimeMillis: 1
+}

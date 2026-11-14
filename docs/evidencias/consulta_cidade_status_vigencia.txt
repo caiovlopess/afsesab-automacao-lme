@@ -1,0 +1,25 @@
+﻿
+=== Cidade + status + vigencia ===
+{
+  consulta: 'Cidade + status + vigencia',
+  etapa: 'sem indice (COLLSCAN forcado)',
+  winningPlanStages: [
+    'COLLSCAN'
+  ],
+  nReturned: 637,
+  docsExamined: 10000,
+  keysExamined: 0,
+  executionTimeMillis: 3
+}
+{
+  consulta: 'Cidade + status + vigencia',
+  etapa: 'com indice',
+  winningPlanStages: [
+    'FETCH',
+    'IXSCAN'
+  ],
+  nReturned: 637,
+  docsExamined: 637,
+  keysExamined: 637,
+  executionTimeMillis: 0
+}

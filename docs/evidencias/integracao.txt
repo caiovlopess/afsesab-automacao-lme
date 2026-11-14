@@ -1,0 +1,18 @@
+test_a_perfil_autorizado_recebe_dados_mascarados (__main__.TestIntegracaoConsulta.test_a_perfil_autorizado_recebe_dados_mascarados) ... ok
+test_b_perfil_sem_permissao_nao_recebe_e_registra_negacao (__main__.TestIntegracaoConsulta.test_b_perfil_sem_permissao_nao_recebe_e_registra_negacao) ... ok
+test_c_cpf_nunca_aparece_completo (__main__.TestIntegracaoConsulta.test_c_cpf_nunca_aparece_completo) ... ok
+test_d_cidade_desconhecida_negada_e_auditada (__main__.TestIntegracaoConsulta.test_d_cidade_desconhecida_negada_e_auditada) ... ok
+test_e_status_com_tipo_invalido_rejeitado_e_auditado (__main__.TestIntegracaoConsulta.test_e_status_com_tipo_invalido_rejeitado_e_auditado) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.305s
+
+OK
+
+(a) registro retornado: {"nome": "Davi Lucca Farias", "cidade": "Santo Antônio de Jesus", "lme": {"medicamento": "Imatinibe 400mg", "quantidade": 90, "vigencia_inicio": "2026-11-13", "vigencia_fim": "2027-05-12", "status": "ATIVA"}, "cpf": "***.***.***-02"}
+(a) auditoria: {"usuario": "teste_farmaceutico_sai", "view": "pacientes_sai", "permitido": true, "registros_retornados": 5, "criado_em": "2026-11-14T21:52:20.456000"}
+
+(b) motivo da negacao: acesso negado pelo MongoDB: not authorized on lme to execute command { find: "pacientes_amargosa", filter: { cidade: "Amargosa", lme.status: "ATIVA" }, projection: { _id: 0, nome: 1, cidade: 1, lme: 1, cpf: 1 }, limit: 20, lsid: { id: UUID("0c2ede78-2776-4f9c-ade9-574572990d5b") }, $db: "lme" }, full error: {'ok': 0.0, 'errmsg': 'not authorized on lme to execute command { find: "pacientes_amargosa", filter: { cidade: "Amargosa", lme.status: "ATIVA" }, projection: { _id: 0, nome: 1, cidade: 1, lme: 1, cpf: 1 }, limit: 20, lsid: { id: UUID("0c2ede78-2776-4f9c-ade9-574572990d5b") }, $db: "lme" }', 'code': 13, 'codeName': 'Unauthorized'}
+(b) auditoria negada: {"usuario": "teste_farmaceutico_sai", "view": "pacientes_amargosa", "permitido": false, "motivo": "acesso negado pelo MongoDB: not authorized on lme to execute command { find: \"pacientes_amargosa\", filter: { cidade: \"Amargosa\", lme.status: \"ATIVA\" }, projection: { _id: 0, nome: 1, cidade: 1, lme: 1, cpf: 1 }, limit: 20, lsid: { id: UUID(\"0c2ede78-2776-4f9c-ade9-574572990d5b\") }, $db: \"lme\" }, full error: {'ok': 0.0, 'errmsg': 'not authorized on lme to execute command { find: \"pacientes_amargosa\", filter: { cidade: \"Amargosa\", lme.status: \"ATIVA\" }, projection: { _id: 0, nome: 1, cidade: 1, lme: 1, cpf: 1 }, limit: 20, lsid: { id: UUID(\"0c2ede78-2776-4f9c-ade9-574572990d5b\") }, $db: \"lme\" }', 'code': 13, 'codeName': 'Unauthorized'}", "criado_em": "2026-11-14T21:52:20.552000"}
+
+(c) exemplo mascarado: {"nome": "Dr. João Guilherme Aragão", "cidade": "Nazaré", "lme": {"medicamento": "Sirolimo 1mg", "quantidade": 90, "vigencia_inicio": "2026-11-13", "vigencia_fim": "2027-05-12", "status": "ATIVA"}, "cpf": "***.***.***-18"}

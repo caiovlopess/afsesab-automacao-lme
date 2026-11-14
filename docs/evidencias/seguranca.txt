@@ -1,0 +1,9 @@
+test_auditor_reads_audit_log_and_masked_views (__main__.TestSecurityPermissions.test_auditor_reads_audit_log_and_masked_views) ... ok
+test_farmaceutico_reads_only_its_city_view (__main__.TestSecurityPermissions.test_farmaceutico_reads_only_its_city_view) ... ok
+test_ia_reads_views_inserts_audit_and_cannot_read_original (__main__.TestSecurityPermissions.test_ia_reads_views_inserts_audit_and_cannot_read_original) ... ok
+test_workflow_audit_only_inserts_audit_events (__main__.TestSecurityPermissions.test_workflow_audit_only_inserts_audit_events) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.142s
+
+OK
