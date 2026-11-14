@@ -13,7 +13,8 @@ Protótipo acadêmico para demonstrar consultas autorizadas de LME por cidade,
 medicamento e status. Usa **somente dados fictícios**, MongoDB em Docker, n8n
 para orquestração (workflow ainda em construção) e uma camada Python de
 consulta/auditoria. **Não acessa o AFSESAB real** e **não inclui RPA com
-Playwright** nesta entrega.
+Playwright** nesta entrega. O contrato para uma futura integração RPA está em
+`scripts/rpa/`, sem implementação.
 
 ## O que funciona hoje
 
@@ -35,7 +36,9 @@ Playwright** nesta entrega.
   C6–C8 de `docs/casos_de_teste.md`.
 - Rodar a medição de latência real e salvar em `docs/evidencias/latencia.txt`.
 - Executar o fine-tuning no Colab e preencher `finetuning/resultados.md`.
-- RPA com Playwright (fora do escopo desta entrega; ver `docs/relatorio.md`).
+- RPA com Playwright (fora do escopo desta entrega; há apenas contrato e stub de
+  dados fictícios em `scripts/rpa/`, com a justificativa na seção 7 de
+  `docs/relatorio.md`).
 
 ## Arquitetura atual
 
@@ -212,6 +215,7 @@ scripts/
   testes_integracao.py # 5 testes de integração
   medir_latencia.py    # latência e custo do webhook
   consultas_lentas.js  # comparação de planos/índices
+  rpa/                 # contrato e stub (sem automação real)
 finetuning/            # dataset, notebook e avaliador
 ```
 
@@ -242,6 +246,8 @@ finetuning/            # dataset, notebook e avaliador
 - `docs/checklist_entrega.md`: item por item da entrega, com status e evidência.
 - `docs/casos_de_teste.md`: casos C1–C8, com execução real onde já houve.
 - `docs/guia_n8n.md`: montagem do workflow e tradeoff do RAG.
+- `scripts/rpa/README.md`: contrato, riscos e pré-requisitos de um RPA futuro
+  (sem implementação).
 - `docs/evidencias/`: saídas reais de testes e `explain`.
 - `finetuning/resultados.md`: resultados do experimento (PENDENTE até o Colab).
 
@@ -253,4 +259,5 @@ finetuning/            # dataset, notebook e avaliador
 - O n8n é um protótipo local, sem autenticação de webhook na configuração
   padrão.
 - O fine-tuning é preliminar, com 30 exemplos de teste; não é benchmark.
-- O RPA com Playwright não faz parte desta entrega.
+- O RPA com Playwright não faz parte desta entrega; existe apenas o contrato em
+  `scripts/rpa/`, sem acesso ao sistema real.

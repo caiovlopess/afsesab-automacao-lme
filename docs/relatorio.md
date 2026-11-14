@@ -58,9 +58,9 @@ um LLM e auditoria. RPA com Playwright **não** faz parte desta entrega.
 - **Fine-tuning:** os scripts e o notebook estão prontos; o treino no Colab e a
   comparação base vs. ajustado ainda não foram executados. `finetuning/resultados.md`
   permanece `PENDENTE`.
-- **RPA (Playwright):** fora da entrega. Não foi implementado nem executado.
-  Também não há integração com o sistema real, que dependeria de autorização
-  institucional.
+- **RPA (Playwright):** fora da entrega. Não foi implementado nem executado, e
+  não há integração com o sistema real. Existe apenas um contrato de integração
+  com dados fictícios (`scripts/rpa/`); os pré-requisitos estão na seção 7.
 - **Autenticação do webhook:** a versão local não tem autenticação; é um
   protótipo e não deve ser exposto na internet.
 
@@ -118,9 +118,41 @@ na saída da camada Python. Nenhuma senha ou chave real está no repositório; o
 - **Dependência de serviços:** o workflow depende de MongoDB, n8n e do provedor
   de LLM; falhas externas precisam de tratamento e auditoria.
 - **RPA ausente:** a automação do sistema real não foi entregue e continua sendo
-  o maior item pendente.
+  o maior item de trabalho futuro. A seção 7 explica por que ela não entrou nesta
+  versão e o que seria necessário antes de tentar.
 
-## 7. Contribuição individual
+## 7. Trabalhos futuros: RPA (não implementado)
+
+Foi sugerido usar RPA para "dissecar" o sistema real e montar uma cópia de teste,
+de modo que as validações rodassem contra um fluxo mais próximo do real. A ideia
+foi **deliberadamente não executada** nesta entrega, por quatro motivos:
+
+1. **Escopo:** a entrega foi definida com dados fictícios e sem acesso ao sistema
+   real; incluir RPA exigiria refazer o escopo e a validação.
+2. **Autorização:** automatizar um sistema de terceiros sem autorização escrita
+   pode violar termos de uso, direitos autorais e a LGPD. "Testar na produção",
+   mesmo entre aspas, pode gerar efeitos reais.
+3. **Dados de saúde:** uma cópia do sistema real aumentaria o risco de expor
+   dados de pacientes; o protótipo atual não corre esse risco.
+4. **Evidência:** não haveria tempo de implementar, testar e documentar o RPA com
+   o mesmo rigor dos outros itens; um RPA frágil seria pior do que a ausência
+   declarada.
+
+O que ficou pronto é apenas o **contrato de integração**, em
+`scripts/rpa/README.md` e `scripts/rpa/contrato.py`:
+
+- o adaptador recebe `perfil`, `cidade`, `status` e `medicamento`;
+- devolve os mesmos campos da consulta atual (`permitido`, `total`, `registros`,
+  `motivo`), para que o restante do fluxo não mude;
+- há um adaptador **mock** que devolve dados fictícios e não acessa rede nem
+  navegador.
+
+Para uma fase futura, os pré-requisitos são: autorização formal do responsável
+pelo sistema, ambiente de homologação, contas de teste, limite de requisições,
+auditoria de permitidos e negados e revisão de LGPD. O RPA **nunca** deve rodar
+contra a produção com dados reais, e nenhuma credencial deve ficar no código.
+
+## 8. Contribuição individual
 
 Preencha de 3 a 5 linhas por integrante, descrevendo o que cada um fez:
 
@@ -146,7 +178,7 @@ _______________________________________________________________
 _______________________________________________________________
 ```
 
-## 8. Evidências
+## 9. Evidências
 
 - `docs/evidencias/integracao.txt` — 5 testes de integração `OK`.
 - `docs/evidencias/consulta_cidade_status_vigencia.txt` — `explain` antes/depois.

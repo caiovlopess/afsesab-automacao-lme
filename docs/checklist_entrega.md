@@ -18,7 +18,7 @@ declarado no relatório.
 | Comparação de consultas com e sem índice | OK | `docs/evidencias/consulta_cidade_status_vigencia.txt`, `consulta_medicamento_status.txt` |
 | Relatório de 1–2 páginas com integrantes, riscos e contribuição individual | OK | `docs/relatorio.md` |
 | Nenhum segredo no repositório; `.env` ignorado | OK | `.gitignore`, `.env.example`; varredura final |
-| RPA com Playwright | N/A | Fora do escopo; declarado em `README.md` e `docs/relatorio.md` |
+| RPA com Playwright | N/A | Fora do escopo; contrato, riscos e pré-requisitos em `scripts/rpa/README.md`; justificativa na seção 7 de `docs/relatorio.md` |
 
 ## IA
 
