@@ -1,3 +1,49 @@
+# ============================================================================
+# AF Copilot — dependências PYTHON (backend)
+# ============================================================================
+# Instalar na raiz do projeto:
+#   py -V:Astral/CPython3.11.16 -m venv .venv
+#   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+#
+# As dependências do FRONTEND (Electron) estão em:
+#   desktop-client/package.json   -> npm install
+# As ferramentas de recon/validação (Playwright) estão em:
+#   tools/package.json            -> npm install
+# ============================================================================
+
+# Core API
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.7.1
+python-multipart==0.0.9
+httpx==0.28.1
+
+# Banco de dados / Repository Pattern
+sqlalchemy==2.1.8
+pymongo==4.10.1
+
+# RAG / vector store
+langchain==0.3.3
+langchain-community==0.3.2
+langchain-text-splitters==0.3.0
+langchain-google-genai==2.0.8
+chromadb==0.5.23
+sentence-transformers==3.3.1
+pypdf==5.1.0
+
+# IA multimodal / OCR / PDFs
+google-generativeai==0.8.3
+pypdfium2==4.30.1
+reportlab==4.2.5
+pillow==13.0.0
+
+# Segurança / testes
+pytest==8.3.4
+
+#Dependências do protótipo complementar (scripts/ e finetuning/)
 faker
-pymongo
 python-dotenv
+
+# Observação: todas as dependências acima já estão pinadas e foram validadas
+# no ambiente Python 3.11.16 usado no projeto.

@@ -1,0 +1,643 @@
+{
+  "url": "https://afsesab.sesab.ba.gov.br/#/app/dashboard",
+  "title": "AFSESAB - Sistema de Gestão Farmacêutica",
+  "capturedAt": "2026-11-16T16:52:27.319Z",
+  "frames": [],
+  "elements": [
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(1) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat",
+      "xpath": "/html/body/div/div[1]/div/div[1]/div[3]/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(59) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat",
+      "xpath": "/html/body/div/div[59]/div/div[1]/div[3]/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.:nth-of-type(2) > a.secondary--text.v-list__tile--active",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(3) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[3]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(4) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[4]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(5) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[5]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(6) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[6]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(7) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[7]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(8) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[8]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(9) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[9]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(3) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(10) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[3]/div[2]/div[10]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(4) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[4]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(4) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[4]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(4) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(3) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[4]/div[2]/div[3]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(5) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[5]/div[2]/div/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(6) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[6]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(6) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[6]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(7) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[7]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(7) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[7]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(7) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(3) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[7]/div[2]/div[3]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(7) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(4) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[7]/div[2]/div[4]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(7) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(5) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[7]/div[2]/div[5]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(7) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(6) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[7]/div[2]/div[6]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(3) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[3]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(4) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[4]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(5) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[5]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(6) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[6]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(7) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[7]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(8) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[8]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(9) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[9]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(8) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(10) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[8]/div[2]/div[10]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(3) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[3]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(4) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[4]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(5) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[5]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(6) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[6]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(7) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[7]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(8) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[8]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(9) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[9]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(10) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[10]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(9) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(11) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[9]/div[2]/div[11]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(10) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(1) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[10]/div[2]/div[1]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(10) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(2) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[10]/div[2]/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(10) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(3) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[10]/div[2]/div[3]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(10) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(4) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[10]/div[2]/div[4]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > aside.v-navigation-drawer.v-navigation-drawer--close > div.v-list.main-menu:nth-of-type(1) > div.v-list__group:nth-of-type(10) > div.v-list__group__items:nth-of-type(2) > div.menu-sub-item:nth-of-type(5) > a.v-list__tile.v-list__tile--link",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/aside/div[1]/div[10]/div[2]/div[5]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > button.v-toolbar__side-icon.v-btn",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/nav/div/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(2) > span. > button.v-btn.v-btn--icon",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/nav/div/span[2]/span/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(3) > span. > button.v-btn.v-btn--icon",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/nav/div/span[3]/span/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(4) > span. > a.v-btn.v-btn--icon",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/nav/div/span[4]/span/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(5) > span. > button.v-btn.v-btn--icon",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/nav/div/span[5]/span/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "button",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(6) > span. > button.v-btn.v-btn--icon",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/div/nav/div/span[6]/span/button",
+      "name": "",
+      "id": "",
+      "type": "button",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.layout.row:nth-of-type(2) > div.flex.xs12:nth-of-type(1) > div.white--text.v-card > div.v-card__actions:nth-of-type(2) > a.v-btn.v-btn--router",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/main/div/div/div/div[1]/div/div/div[1]/div[2]/div[1]/div/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "input",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.layout.row:nth-of-type(2) > div.flex.xs12:nth-of-type(2) > div.white--text.v-card > div.v-card__text:nth-of-type(1) > div.v-input.v-input--selection-controls:nth-of-type(2) > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input.",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/main/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div/div[1]/div[2]/div/div[1]/div/input",
+      "name": "",
+      "id": "",
+      "type": "checkbox",
+      "placeholder": "",
+      "ariaLabel": "Atribuídos a mim"
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.layout.row:nth-of-type(2) > div.flex.xs12:nth-of-type(2) > div.white--text.v-card > div.v-card__actions:nth-of-type(2) > a.v-btn.v-btn--router",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/main/div/div/div/div[1]/div/div/div[1]/div[2]/div[2]/div/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.layout.row:nth-of-type(2) > div.flex.xs12:nth-of-type(3) > div.white--text.v-card > div.v-card__actions:nth-of-type(2) > a.v-btn.v-btn--router",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/main/div/div/div/div[1]/div/div/div[1]/div[2]/div[3]/div/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.layout.row:nth-of-type(2) > div.flex.xs12:nth-of-type(4) > div.white--text.v-card > div.v-card__actions:nth-of-type(2) > a.v-btn.v-btn--router",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/main/div/div/div/div[1]/div/div/div[1]/div[2]/div[4]/div/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    },
+    {
+      "tag": "a",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(66) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.layout.row:nth-of-type(2) > div.flex.xs12:nth-of-type(5) > div.white--text.v-card > div.v-card__actions:nth-of-type(2) > a.v-btn.v-btn--router",
+      "xpath": "/html/body/div/div[66]/div/div[2]/div/main/div/div/div/div[1]/div/div/div[1]/div[2]/div[5]/div/div[2]/a",
+      "name": "",
+      "id": "",
+      "type": "",
+      "placeholder": "",
+      "ariaLabel": ""
+    }
+  ],
+  "jsAssets": [
+    "https://afsesab.sesab.ba.gov.br/static/js/manifest.14a76fad9b304f57d579.js",
+    "https://afsesab.sesab.ba.gov.br/static/js/app.dbea79aabac70650bd7f.js",
+    "https://afsesab.sesab.ba.gov.br/static/js/vendor.888bd94f9c2bd203b102.js"
+  ]
+}

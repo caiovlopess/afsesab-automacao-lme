@@ -28,6 +28,16 @@ services:
       - n8n_data:/home/node/.n8n
       - ./docs/regras_lme:/home/node/regras_lme:ro
 
+  ollama:
+    image: ollama/ollama
+    container_name: lme-ollama
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
 volumes:
   mongo_data:
   n8n_data:
+  ollama_data:

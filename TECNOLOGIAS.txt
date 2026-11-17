@@ -1,0 +1,287 @@
+================================================================================
+AF COPILOT — TECNOLOGIAS, ARQUITETURA E INVENTÁRIO DO PROJETO
+================================================================================
+Atualizado em: 16/11/2026
+Pasta raiz: C:\Users\offsechen1\Desktop\AF
+Versão: 1.0 — Fase 1 (core + IA + resolvedor de problemas + segurança)
+
+--------------------------------------------------------------------------------
+1. VISÃO GERAL
+--------------------------------------------------------------------------------
+Aplicativo Desktop Split-View para Assistência Farmacêutica (AFSESAB/SESAB-BA):
+  - Painel esquerdo (70%): clone local funcional do portal AFSESAB com dados
+    realistas e sintéticos, 9 menus e 47 submenus navegáveis.
+  - Painel direito (30%): copiloto farmacêutico com IA (RAG, multimodal,
+    insights administrativos, auditoria, busca global).
+Arquitetura desacoplada: o Electron nunca contém chave de API nem fala com o
+Gemini — toda comunicação passa pela API FastAPI local autenticada.
+
+--------------------------------------------------------------------------------
+2. ARQUITETURA
+--------------------------------------------------------------------------------
+[ AFSESAB Clone (BrowserView / file://) ]
+        |  preload REA (MutationObserver + input/selection)  -> ipcRenderer
+        v
+[ Electron Main (TypeScript) ]
+        |  sanitização LGPD + token local + HTTP (fetch)
+        v
+[ FastAPI :8000 ] -- Pydantic + CORS + autenticação + RBAC
+        |            |
+        |            +--> SQLite (SQLAlchemy) — usuários, LMEs, catálogo,
+        |                  sessões, auditoria
+        |            +--> ChromaDB — vetores dos PCDTs
+        |            +--> Gemini API — geração e multimodal (somente no backend)
+        v
+[ Sidebar Renderer ] <- IPC contextBridge (afDesktop / afPortal)
+
+Fluxo de dados: portal -> REA -> Main (LGPD) -> Sidebar -> Backend -> IA -> UI.
+
+--------------------------------------------------------------------------------
+3. LINGUAGENS
+--------------------------------------------------------------------------------
+TypeScript 5.5 .............. Main process, preloads, renderer da sidebar
+JavaScript (ES2022) ......... Clone do portal e scripts de validação (tools)
+Python 3.11.16 .............. Backend FastAPI, serviços, scripts e testes
+HTML5 / CSS3 ................ Interfaces (login, sidebar, clone)
+SQL (SQLite) ................ Consultas via SQLAlchemy ORM
+PowerShell .................. start.ps1, smoke-test.ps1, empacotamento
+
+--------------------------------------------------------------------------------
+4. FRONTEND / DESKTOP
+--------------------------------------------------------------------------------
+Electron 30 ................. BrowserWindow + BrowserView, ciclo de vida, IPC
+contextBridge ............... API segura exposta ao renderer (afDesktop/afPortal)
+contextIsolation = true ..... Isolamento entre página e código da aplicação
+nodeIntegration = false ..... Sem Node.js dentro das páginas
+sandbox = true .............. Renderer em sandbox
+protocolo af:// ............. registerFileProtocol para assets locais
+Allowlist de origem ......... Bloqueia navegação fora do AFSESAB (ou file:// no demo)
+Login local ................. PBKDF2 no backend + token de sessão (X-Session-Token)
+Ícone ....................... Brasão da Bahia (assets/app.ico, brasao-bahia.png)
+Empacotamento ............... scripts/package-app.mjs -> release/AF Copilot/AF Copilot.exe
+
+--------------------------------------------------------------------------------
+5. BACKEND / API
+--------------------------------------------------------------------------------
+FastAPI 0.115.0 ............. API REST (GET/POST), lifespan, exception handler
+Uvicorn 0.30.6 .............. Servidor ASGI em 127.0.0.1:8000
+Pydantic v2 ................. Validação estrita, extra=forbid, regex, limites
+Pydantic-settings 2.7.1 ..... Configuração via .env (NoDecode para listas)
+SQLAlchemy 2.1.8 ............ ORM, sessões, modelos declarativos, índices
+python-multipart ............ Upload de receitas (multipart)
+CORS restrito ............... Somente af://af-desktop
+Autenticação ................ X-Internal-Auth-Token (hmac.compare_digest)
+RBAC ........................ require_perfil (Farmacêutico/Admin/Auditor)
+RedactingFilter ............. Remove CPF/CNS/e-mail dos logs
+Auditoria ................... AuditLog append-only (sem update/delete)
+
+Endpoints principais:
+  POST /api/v1/auth/login ................ login + sessão
+  POST /api/v1/admin/insights ............ insights agregados (cache TTL 300s)
+  POST /api/v1/admin/ask ................. busca/pergunta em linguagem natural
+  POST /api/v1/admin/audit ............... achados operacionais da IA (alertas)
+  GET  /api/v1/fictional/stats ........... indicadores do dashboard
+  GET  /api/v1/fictional/view/{key} ...... dataset de cada uma das 47 telas
+  GET  /api/v1/fictional/export/{key} .... exportação CSV/PDF de relatórios
+  GET  /api/v1/fictional/lmes/{id}/pdf ... PDF da LME (mesma linha da tabela)
+  POST /api/v1/fictional/lmes/{id}/status  Ação real + auditoria
+  POST /api/v1/fictional/medicamentos .... cadastro de medicamento
+  GET  /api/v1/fictional/audit ........... log de auditoria (RBAC)
+  GET  /api/v1/fictional/audit/export .... exportação do log (RBAC)
+  POST /api/v1/analyze-context ........... RAG de protocolos
+  POST /api/v1/validate-prescription ..... OCR multimodal de receita/LME
+  GET  /health ........................... healthcheck
+
+--------------------------------------------------------------------------------
+6. BANCO DE DADOS
+--------------------------------------------------------------------------------
+SQLite (runtime/af_copilot.db)
+  - 12.000 usuários com nomes realistas e e-mails @example.invalid
+  - 18.000 LMEs (pendente/autorizada/faturada/dispensada)
+  - Tabelas: fictional_users, fictional_lmes, catalog_medications,
+             app_users, app_sessions, audit_logs
+  - Índices: status, user_id, username, token, código, e-mail
+  - Permissões: chmod 0600 (Unix) / icacls (produção no Windows)
+  - Consultas 100% parametrizadas via ORM (imune a SQL injection)
+  - Dataset determinístico em memória (build_master) garante que tabela,
+    PDF e consultas usem exatamente os mesmos pacientes e medicamentos
+
+ChromaDB (vector_store/)
+  - Coleção pcdt_sesab, embeddings sentence-transformers multilíngues
+  - Persistido localmente, preparado para indexar PDFs de PCDTs/portarias
+
+MongoDB (Fase 2 — docker-compose.yml comentado)
+  - Reservado para auditoria imutável, histórico e cache distribuído
+  - pymongo 4.10.1 já instalado; Repository Pattern preparado
+
+--------------------------------------------------------------------------------
+7. INTELIGÊNCIA ARTIFICIAL
+--------------------------------------------------------------------------------
+Modelos (GEMINI_API_KEY somente em ai-backend/.env):
+  Principal ......... gemini-3.8-flash
+  Fallback 1 ........ gemini-3.5-flash-lite
+  Fallback 2 ........ gemini-3.1-flash-lite
+  Timeout duro ...... 12s por modelo (nunca trava a interface)
+  Transporte ........ REST
+
+LangChain 0.3.3 / langchain-community / langchain-text-splitters .... RAG
+langchain-google-genai 2.0.8 ....................................... ChatGoogleGenerativeAI
+google-generativeai 0.8.3 .......................................... multimodal (imagem/PDF)
+sentence-transformers 3.3.1 ........................................ embeddings locais
+HuggingFace Embeddings ..... paraphrase-multilingual-MiniLM-L12-v2
+ChromaDB 0.5.23 .................................................... vector store
+Cache TTL 300s .................................................... evita custo de cota
+Base local de protocolos ... resposta instantânea (~4 ms) para casos conhecidos
+
+Funcionalidades de IA:
+  - RAG com critérios de inclusão, exames obrigatórios, alertas, "como fazer" e exemplo
+  - Validador multimodal de receitas (extrai princípio ativo, concentração,
+    posologia, CID e data; cruza com a LME e aponta inconsistências)
+  - Insights para o administrador (agregados, sem PII)
+  - Auditoria preditiva (pendências, baixa conversão, unidades críticas)
+  - Busca global em linguagem natural (paciente, CID, medicamento, fornecedor)
+  - PromptGuard: 12 padrões de prompt injection + delimitação <user_input> + redação de PII
+
+--------------------------------------------------------------------------------
+8. SEGURANÇA
+--------------------------------------------------------------------------------
+SQL Injection ......... ORM parametrizado + regex de chaves + limites de ID (3/3 bloqueados)
+Prompt Injection ...... 12/12 payloads bloqueados, 0 falso positivo, saída redigida
+PII/LGPD .............. filtro zero-trust no cliente + redaction no backend + logs limpos
+Autenticação .......... token interno + sessão PBKDF2 (210.000 iterações + salt)
+Autorização ........... RBAC por perfil (403 confirmado para perfil não autorizado)
+CORS .................. origem única af://af-desktop
+Upload ................ máx. 5 MB + magic bytes (PNG/JPG/PDF) + Content-Type
+XSS ................... escapeHtml em todas as células renderizadas
+Path traversal ........ query string removida no protocolo af://
+Segredos .............. nenhuma chave no cliente; .env gitignored; varrido no repo
+Stack trace ........... handler global com mensagem genérica
+Timeout/DoS ........... limite de 12s por modelo + cache + base local
+Arquivo SQLite ........ permissão restrita
+
+Testes de segurança: ai-backend/security_test.py (5/20 requisições — passou)
+Testes unitários: ai-backend/tests/test_security.py (pytest 5/5)
+Relatório PDF: docs/Relatorio-Seguranca-AF-Copilot.pdf (6 páginas)
+
+--------------------------------------------------------------------------------
+9. RELATÓRIOS E DOCUMENTOS
+--------------------------------------------------------------------------------
+ReportLab 4.2.5 ....... geração de PDFs (LME, relatórios, relatório de segurança)
+pypdfium2 4.30.1 ...... converte PDF de receita em imagem para o Gemini
+pypdf ................. leitura/validação dos PDFs gerados
+Pillow 13.0.0 ......... conversão do brasão para .ico
+CSV ................... exportação com BOM (compatível com Excel)
+
+--------------------------------------------------------------------------------
+10. TESTES, CI E FERRAMENTAS
+--------------------------------------------------------------------------------
+pytest 8.3.4 .................. testes de segurança (ai-backend/tests)
+security_test.py .............. 12 injections locais + SQLi + bloqueios na API
+check-solver.mjs .............. validação ponta a ponta do resolvedor
+check-views.mjs ............... 47/47 assinaturas de telas distintas
+check-pdf-match.mjs ........... tabela x PDF com o mesmo paciente
+Playwright 1.46 ............... automação via CDP (Chrome e Electron)
+GitHub Actions ................ .github/workflows/ci.yml (pytest + npm build)
+
+Ferramentas de engenharia reversa (tools/):
+  playwright-capture.mjs ... DOM + bundles do portal real via CDP
+  read-real-menu.mjs ....... menus reais lidos do DOM autenticado
+  download-assets.mjs ...... CSS e source maps
+  extract-sources.mjs ...... 1356 arquivos extraídos dos source maps
+  analyze-bundle.mjs ....... rotas/endpoints do bundle
+  recon/ ................... mapas de DOM, rotas, CSS e fontes extraídas
+
+--------------------------------------------------------------------------------
+11. DEPENDÊNCIAS PINADAS (requirements.txt na raiz)
+--------------------------------------------------------------------------------
+fastapi 0.115.0 | uvicorn 0.30.6 | pydantic 2.9.2 | pydantic-settings 2.7.1
+python-multipart 0.0.9 | httpx 0.28.1 | sqlalchemy 2.1.8 | pymongo 4.10.1
+langchain 0.3.3 | langchain-community 0.3.2 | langchain-text-splitters 0.3.0
+langchain-google-genai 2.0.8 | chromadb 0.5.23 | sentence-transformers 3.3.1
+pypdf 5.1.0 | google-generativeai 0.8.3 | pypdfium2 4.30.1
+reportlab 4.2.5 | pillow 13.0.0 | pytest 8.3.4
+
+Frontend: electron ^30.0.0 | typescript ^5.5.0 | electron-builder ^24.13.3
+          @types/node ^20.14.0 | playwright ^1.46.0
+
+--------------------------------------------------------------------------------
+12. COMANDOS PARA RODAR
+--------------------------------------------------------------------------------
+Backend:
+  cd ai-backend
+  py -V:Astral/CPython3.11.16 -m venv .venv
+  .\.venv\Scripts\python.exe -m pip install -r ..\requirements.txt
+  .\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+Frontend:
+  cd desktop-client
+  npm install
+  npm run build
+  npm start              (ou npm run package para gerar o .exe)
+
+Tudo de uma vez:
+  .\start.ps1            (sobe backend, espera /health e abre o Electron)
+  Duplo clique: AF Copilot.lnk (já usa --demo / dados fictícios)
+
+Testes:
+  cd ai-backend
+  .\.venv\Scripts\python.exe -m pytest tests -q
+  .\.venv\Scripts\python.exe security_test.py
+  .\.venv\Scripts\python.exe generate_security_report.py
+
+--------------------------------------------------------------------------------
+13. INVENTÁRIO DE ARQUIVOS (raiz AF\, exceto node_modules/.venv/dist/release)
+--------------------------------------------------------------------------------
+.github\workflows\ci.yml
+requirements.txt
+README.md
+VALIDATION.md
+TECNOLOGIAS.txt
+start.ps1
+smoke-test.ps1
+docs\Relatorio-Seguranca-AF-Copilot.pdf
+docs\LME-exemplo.pdf
+
+ai-backend\:
+  .env | .env.example | .gitignore | Dockerfile | docker-compose.yml
+  requirements.txt | README.md | main.py | ingest.py | seed_fictional_data.py
+  seed_app_user.py | security_test.py | generate_security_report.py
+  app\main.py
+  app\api\v1\{router,auth,admin,fictional_data,analyze_context,validate_prescription}.py
+  app\core\{config,security,logging,database,auth_deps}.py
+  app\schemas\{requests,responses}.py
+  app\services\{sanitizer,file_validation,rag_service,vision_service,
+                fictional_views,lme_pdf,report_export,admin_insights,
+                admin_ask,prompt_guard}.py
+  app\models\{app_user,operational,sql_models,domain}.py
+  app\repositories\{base,audit_repository}.py
+  tests\test_security.py
+  runtime\af_copilot.db | runtime\auth_token
+  vector_store\chroma.sqlite3
+
+desktop-client\:
+  package.json | package-lock.json | tsconfig.json | .gitignore | README.md
+  assets\app.ico | assets\brasao-bahia.png
+  scripts\copy-assets.js | scripts\package-app.mjs
+  src\shared\types.ts
+  src\main\{main,preload,login-preload}.ts
+  src\main\rea\{webview-preload,selectors}.ts
+  src\main\security\{lgpd-sanitizer,local-auth}.ts
+  src\main\services\{backend-client,backend-launcher}.ts
+  src\renderer\{index.html,styles.css,app.ts}
+  src\login\{index.html,app.js}
+  src\clone\{index.html,styles.css,app.js}
+  release\AF Copilot\AF Copilot.exe  (executável gerado)
+
+tools\:
+  package.json | README.md | playwright-capture.mjs | capture-routes.mjs
+  read-real-menu.mjs | analyze-bundle.mjs | download-assets.mjs
+  extract-sources.mjs | inspect-sourcemap.mjs | audit-assets.mjs
+  validate-app.mjs | validate-rea.mjs | check-views.mjs | check-ask.mjs
+  check-new-features.mjs | check-packaged.mjs | check-pdf-match.mjs
+  check-solver.mjs | debug-app.mjs
+  recon\{dom-map.json,RESUMO.md,css\,routes\,js\,src\}
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================

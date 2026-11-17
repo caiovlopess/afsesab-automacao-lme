@@ -28,7 +28,7 @@ declarado no relatório.
 | Prompt v2 com recusa sem permissão, CPF protegido e formato fixo | OK | `prompts/v2.md` |
 | CHANGELOG explicando o que mudou de v1 para v2 e por quê | OK | `prompts/CHANGELOG.md` |
 | Base de regras fictícias (4–5 documentos curtos) | OK | `docs/regras_lme/` (5 arquivos) |
-| Workflow do n8n com webhook, consulta, regras, LLM e auditoria | PENDENTE | `docs/guia_n8n.md`; exportar `n8n/workflow_lme.json` |
+| Workflow do n8n com webhook, consulta, regras, LLM e auditoria | PARCIAL | `n8n/workflow_lme.json` exportado; guia em `docs/guia_n8n.md`; falta executar C6–C8 |
 | RAG das regras no n8n (leitura direta dos arquivos) | PENDENTE | `docs/guia_n8n.md`, seção 9; depende do workflow montado |
 | Dataset sintético de fine-tuning (300 exemplos, 270/30) | OK | `finetuning/gerar_dataset.py`, `train.jsonl`, `test.jsonl` |
 | Notebook de treino LoRA/Unsloth para Colab | OK (roteiro) | `finetuning/treino.ipynb` |
@@ -54,7 +54,7 @@ declarado no relatório.
 | Webhook do n8n testado (permitido e negado) | PENDENTE | `docs/casos_de_teste.md` (C6–C7) |
 | Prompt injection no LLM testado | PENDENTE | `docs/casos_de_teste.md` (C8) |
 | Segredos apenas no `.env` e nas credenciais do n8n | OK | `.env.example` sem valores reais; `n8n/README.md` |
-| JSON exportado do n8n sem credenciais/chaves | PENDENTE | `n8n/workflow_lme.json` ainda não existe |
+| JSON exportado do n8n sem credenciais/chaves | OK | `n8n/workflow_lme.json`; varredura de `password`, `apiKey`, `Authorization`, `Bearer`, `sk-` sem correspondências |
 | Revisão de LGPD/uso real documentada | OK | `docs/relatorio.md`, `README.md` |
 
 ## Itens que dependem de execução do usuário

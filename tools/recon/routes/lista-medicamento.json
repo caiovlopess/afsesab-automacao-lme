@@ -1,0 +1,266 @@
+{
+  "url": "https://afsesab.sesab.ba.gov.br/#/app/lista-medicamento",
+  "capturedAt": "2026-11-16T16:53:20.306Z",
+  "fields": [
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat theme--light",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(73) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-toolbar__side-icon v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > button.v-toolbar__side-icon.v-btn"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(2) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(3) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(5) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(6) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Lista",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(1) > div.flex.xs6:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Código Simpas",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(1) > div.flex.xs4:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Medicamento/ Descrição Resumida Simpas",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(1) > div.flex.xs6:nth-of-type(3) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Programa",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout:nth-of-type(2) > div.flex.xs6 > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--floating theme--light secondary",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(3) > div.flex.text-all-right > button.v-btn.v-btn--floating"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "btn-page v-btn v-btn--disabled v-btn--flat v-btn--small theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.btn-page.v-btn:nth-of-type(1)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "btn-page v-btn v-btn--disabled v-btn--flat v-btn--small theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.btn-page.v-btn:nth-of-type(2)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light secondary btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(3)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(4)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(5)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(6)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(7)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(8)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(9)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(10)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(11)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--small theme--light btn-page hidden-xs-only",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.v-btn.v-btn--flat:nth-of-type(12)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "btn-page v-btn v-btn--flat v-btn--small theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.btn-page.v-btn:nth-of-type(13)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "btn-page v-btn v-btn--flat v-btn--small theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > div. > button.btn-page.v-btn:nth-of-type(14)"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--disabled v-btn--flat v-btn--small theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(80) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.:nth-of-type(1) > div.layout.pr-pagination:nth-of-type(2) > button.v-btn.v-btn--disabled"
+    }
+  ]
+}

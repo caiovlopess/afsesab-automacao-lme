@@ -1,0 +1,246 @@
+{
+  "url": "https://afsesab.sesab.ba.gov.br/#/app/lme",
+  "capturedAt": "2026-11-16T16:53:21.834Z",
+  "fields": [
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat theme--light",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(66) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-toolbar__side-icon v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > button.v-toolbar__side-icon.v-btn"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(2) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(3) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(5) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(6) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Nome do Paciente",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(1) > div.flex.xs10:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "CNS",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(1) > div.flex.xs6:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "CPF",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(1) > div.flex.xs4:nth-of-type(3) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "APAC",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(2) > div.flex.xs4:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Prontuário",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(2) > div.flex.xs4:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "CNES",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(2) > div.flex.xs6:nth-of-type(3) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Status",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(3) > div.flex.xs3:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "CID",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(3) > div.flex.xs6:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Medicamentos",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(3) > div.flex:nth-of-type(3) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Paciente com LME de:",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(4) > div.flex.xs3:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Estabelecimento Avaliador",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(4) > div.flex.xs5:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "LME´s que ainda não foram dispensados no mês atual",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(4) > div.flex.xs3:nth-of-type(3) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--floating theme--light secondary",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(4) > div.flex.text-all-right:nth-of-type(4) > button.v-btn.v-btn--floating"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Avaliador",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(5) > div.flex.xs5:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "LME´s mais antigos",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(5) > div.flex.xs2:nth-of-type(2) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--icon v-btn--small theme--light primary--text",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(5) > div.flex:nth-of-type(3) > span.v-tooltip.v-tooltip--bottom > span. > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "LME´s Aguardando Avaliação Ordenado",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(5) > div.flex.xs2:nth-of-type(4) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--icon v-btn--small theme--light primary--text",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(73) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form > div.layout.row:nth-of-type(5) > div.flex:nth-of-type(5) > span.v-tooltip.v-tooltip--bottom > span. > button.v-btn.v-btn--flat"
+    }
+  ]
+}

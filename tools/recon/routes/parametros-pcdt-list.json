@@ -1,0 +1,206 @@
+{
+  "url": "https://afsesab.sesab.ba.gov.br/#/app/parametros-pcdt-list",
+  "capturedAt": "2026-11-16T16:53:26.404Z",
+  "fields": [
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat theme--light",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(64) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-toolbar__side-icon v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > button.v-toolbar__side-icon.v-btn"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(2) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(3) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(5) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(6) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Patologia",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "CID",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs6:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Medicamento",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs6:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control:nth-of-type(2) > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--disabled v-btn--floating theme--light secondary--text",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(3) > div.flex.text-all-right > button.v-btn.v-btn--disabled"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-pagination__navigation v-pagination__navigation--disabled",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(1) > div.v-stepper__wrapper > div. > div.layout.higia-pagination:nth-of-type(2) > div.text-xs-center > ul.v-pagination.theme--light > li.:nth-of-type(1) > button.v-pagination__navigation.v-pagination__navigation--disabled"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-pagination__navigation v-pagination__navigation--disabled",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(1) > div.v-stepper__wrapper > div. > div.layout.higia-pagination:nth-of-type(2) > div.text-xs-center > ul.v-pagination.theme--light > li.:nth-of-type(2) > button.v-pagination__navigation.v-pagination__navigation--disabled"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Critérios Obrigatório",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(2) > div.v-stepper__wrapper > div.container.fluid > div.layout.row:nth-of-type(1) > div.flex.xs9:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Quantos Obrigatórios?",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(2) > div.v-stepper__wrapper > div.container.fluid > div.layout.row:nth-of-type(1) > div.flex.xs3:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Critérios Somatório",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(2) > div.v-stepper__wrapper > div.container.fluid > div.layout.row:nth-of-type(2) > div.flex.xs9:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Soma dos Critérios:*",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(2) > div.v-stepper__wrapper > div.container.fluid > div.layout.row:nth-of-type(2) > div.flex.xs3:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "É monoterapia?",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(2) > div.v-stepper__wrapper > div.container.fluid > div.layout.row:nth-of-type(3) > div.flex.xs3:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Critérios Obrigatório",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(3) > div.v-stepper__wrapper > div.container.fluid > div.layout.row > div.flex.xs9:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Quantos Obrigatórios?*",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div.v-stepper.theme--light > div.v-stepper__items:nth-of-type(2) > div.v-stepper__content:nth-of-type(3) > div.v-stepper__wrapper > div.container.fluid > div.layout.row > div.flex.xs3:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot > input."
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--disabled v-btn--flat theme--light primary--text",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(71) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > form.v-form > div.layout.row > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__actions:nth-of-type(2) > div.:nth-of-type(2) > button.v-btn.v-btn--disabled"
+    }
+  ]
+}

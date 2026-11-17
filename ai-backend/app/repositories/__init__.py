@@ -1,0 +1,1 @@
+"""Repositórios (Repository Pattern)."""

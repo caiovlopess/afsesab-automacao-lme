@@ -1,0 +1,96 @@
+{
+  "url": "https://afsesab.sesab.ba.gov.br/#/app/cid",
+  "capturedAt": "2026-11-16T16:53:23.352Z",
+  "fields": [
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat theme--light",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(58) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-toolbar__side-icon v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > button.v-toolbar__side-icon.v-btn"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(2) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(3) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(5) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(6) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Código ou Descrição",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(1) > div.flex.xs8:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Status",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(1) > div.flex.xs:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--floating theme--light secondary",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(65) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.text-all-right > button.v-btn.v-btn--floating"
+    }
+  ]
+}

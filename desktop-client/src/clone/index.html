@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>AFSESAB - Sistema de Gestão Farmacêutica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img class="brand__brasao" src="../brasao.png" alt="Brasão da Bahia" />
+        <div class="brand__logo">AFSESAB</div>
+        <div class="brand__user" id="user-box">
+          <strong id="clone-user">Usuário</strong>
+          <span id="clone-profile">Farmacêutico</span>
+          <small id="clone-email">usuario@example.invalid</small>
+        </div>
+      </div>
+
+      <nav class="menu" id="menu"></nav>
+
+      <div class="sidebar__footer">
+        <span>Sistema de Gestão Farmacêutica · v1.0</span>
+      </div>
+    </aside>
+
+    <section class="main">
+      <header class="topbar">
+        <span class="topbar__unit" id="unit">5ª DIRETORIA REGIONAL DE SAÚDE - GANDU</span>
+        <div class="topbar__search">
+          <input id="global-search" placeholder="Buscar paciente, CID, medicamento, fornecedor…" />
+          <button id="btn-search" title="Buscar com IA">🔍</button>
+        </div>
+        <div class="topbar__icons">
+          <button title="Auditoria" id="btn-audit-view">📋</button>
+          <button title="Alternar menu" id="btn-menu">☰</button>
+          <button title="Ajuda" id="btn-help">?</button>
+          <button title="Meu perfil" id="btn-user">👤</button>
+          <button title="Sair" id="btn-logout">⏻</button>
+        </div>
+      </header>
+      <div class="breadcrumb" id="breadcrumb">Dashboard</div>
+      <main class="content" id="content"></main>
+    </section>
+  </div>
+
+  <div class="modal" id="modal-med">
+    <form class="modal__card" id="form-med">
+      <h3>Cadastrar medicamento</h3>
+      <label>Nome<input id="med-nome" required placeholder="Ex.: Metformina" /></label>
+      <label>Princípio ativo<input id="med-principio" required placeholder="Ex.: Metformina" /></label>
+      <label>Apresentação<input id="med-apresentacao" required placeholder="Ex.: Comprimido 850 mg" /></label>
+      <div class="modal__actions">
+        <button type="button" id="med-cancel" class="btn-sec">Cancelar</button>
+        <button type="submit" class="btn-pri">Salvar</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal" id="modal-info">
+    <div class="modal__card">
+      <h3 id="info-title">Informação</h3>
+      <div id="info-body" class="info-body"></div>
+      <div class="modal__actions">
+        <button type="button" id="info-close" class="btn-pri">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

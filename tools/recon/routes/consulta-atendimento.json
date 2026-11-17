@@ -1,0 +1,566 @@
+{
+  "url": "https://afsesab.sesab.ba.gov.br/#/app/consulta-atendimento",
+  "capturedAt": "2026-11-16T16:53:24.874Z",
+  "fields": [
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(1) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(2) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(3) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(4) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(5) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(6) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(7) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(8) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(9) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(10) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(11) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(12) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(13) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(14) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(15) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(16) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(17) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(18) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(19) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(3) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(20) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(1) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(2) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(3) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(4) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(5) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(6) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(7) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(8) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(9) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(10) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(11) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(12) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(13) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(14) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(15) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(16) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(17) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(18) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(19) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.v-menu__content.theme--light:nth-of-type(4) > div.v-select-list.v-card > div.v-list.theme--light > div.:nth-of-type(20) > a.v-list__tile.v-list__tile--link > div.v-list__tile__action:nth-of-type(1) > div.v-input.v-input--selection-controls > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-input--selection-controls__input > input."
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat theme--light",
+      "selector": "body. > div.application.theme--light > div.v-dialog__content:nth-of-type(62) > div.v-dialog.v-dialog--persistent > div.v-card.v-sheet:nth-of-type(1) > div.v-card__actions:nth-of-type(3) > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-toolbar__side-icon v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > button.v-toolbar__side-icon.v-btn"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(2) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(3) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(5) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--icon theme--light",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > div. > nav.elevation-1.v-toolbar > div.v-toolbar__content > span.v-tooltip.v-tooltip--bottom:nth-of-type(6) > span. > button.v-btn.v-btn--icon"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--flat v-btn--icon v-btn--small theme--dark primary--text",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > nav.v-toolbar.v-toolbar--card > div.v-toolbar__content > div.:nth-of-type(3) > span.v-tooltip.v-tooltip--bottom > span. > button.v-btn.v-btn--flat"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Patologia",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(1) > div.flex.xs6:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Medicamento",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(1) > div.flex.xs6:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Pesquise pelo CNES ou pelo nome do Estabelecimento",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs6:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control:nth-of-type(2) > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Situação da avaliação",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs3:nth-of-type(2) > div.v-input.v-text-field > div.v-input__control > div.v-input__slot:nth-of-type(1) > div.v-select__slot:nth-of-type(1) > div.v-select__selections:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Período Inicial*",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs3:nth-of-type(3) > div.v-menu > div.v-menu__activator:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control:nth-of-type(2) > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "Período Final*",
+      "className": "",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs3:nth-of-type(4) > div.v-menu > div.v-menu__activator:nth-of-type(1) > div.v-input.v-text-field > div.v-input__control:nth-of-type(2) > div.v-input__slot:nth-of-type(1) > div.v-text-field__slot:nth-of-type(1) > input."
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-btn v-btn--floating theme--light secondary",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(1) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > form.v-form.px-2 > div.layout.row:nth-of-type(2) > div.flex.xs1:nth-of-type(5) > button.v-btn.v-btn--floating"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-pagination__navigation v-pagination__navigation--disabled",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(3) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div. > div.layout.higia-pagination:nth-of-type(2) > div.text-xs-center > ul.v-pagination.theme--light > li.:nth-of-type(1) > button.v-pagination__navigation.v-pagination__navigation--disabled"
+    },
+    {
+      "tag": "button",
+      "type": "button",
+      "name": "",
+      "id": "",
+      "placeholder": "",
+      "ariaLabel": "",
+      "className": "v-pagination__navigation v-pagination__navigation--disabled",
+      "selector": "body. > div.application.theme--light > div.application--wrap:nth-of-type(69) > div.teste > div.application.theme--light:nth-of-type(2) > div.application--wrap > main.v-content > div.v-content__wrap > div.container.fluid > div. > div.layout.row:nth-of-type(3) > div.flex.xs12 > div.card--flex-toolbar.v-card > div.v-card__text:nth-of-type(1) > div. > div.layout.higia-pagination:nth-of-type(2) > div.text-xs-center > ul.v-pagination.theme--light > li.:nth-of-type(2) > button.v-pagination__navigation.v-pagination__navigation--disabled"
+    }
+  ]
+}

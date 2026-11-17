@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' af:; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self';" />
+    <title>AF Copilot — Copiloto Farmacêutico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Os 70% esquerdos são ocupados pelo BrowserView do portal. -->
+    <main class="sidebar" aria-label="Copiloto Farmacêutico de IA">
+      <header class="sidebar__header">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">✚</span>
+          <div>
+            <h1>AF Copilot</h1>
+            <p>Assistência Farmacêutica · SESAB</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel" aria-labelledby="ctx-title">
+        <div class="panel__title-row">
+          <h2 id="ctx-title">Contexto capturado</h2>
+          <span id="ctx-status" class="badge badge--muted">aguardando…</span>
+        </div>
+        <p class="hint">Selecione um texto ou interaja com um campo no AFSESAB. A sanitização LGPD remove dados pessoais antes do envio.</p>
+        <div id="context-view" class="context-view" aria-live="polite">Nenhum contexto capturado ainda.</div>
+        <div class="button-row">
+          <button id="btn-analyze" class="btn btn--primary" disabled>Analisar protocolos (RAG)</button>
+          <button id="btn-inspect" class="btn btn--ghost">Inspecionar estrutura da tela</button>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="analysis-title">
+        <h2 id="analysis-title">Análise de protocolos</h2>
+        <div id="analysis-result" class="result" aria-live="polite">—</div>
+      </section>
+
+      <section class="panel" aria-labelledby="rx-title">
+        <h2 id="rx-title">Validador de Receita / LME</h2>
+        <label class="dropzone" for="rx-file">
+          <input id="rx-file" type="file" accept="image/png,image/jpeg,application/pdf" hidden />
+          <span class="dropzone__icon" aria-hidden="true">⇪</span>
+          <span id="rx-file-name">Selecione PNG, JPG ou PDF (máx. 5 MB)</span>
+        </label>
+        <div class="button-row">
+          <button id="btn-validate" class="btn btn--primary" disabled>Validar com IA multimodal</button>
+        </div>
+        <div id="validation-result" class="result" aria-live="polite">—</div>
+      </section>
+
+      <section class="panel" aria-labelledby="insights-title">
+        <h2 id="insights-title">Inteligência para o administrador</h2>
+        <p class="hint">Analisa indicadores agregados da base (sem nomes ou CNS) e sugere prioridades.</p>
+        <div class="chips" role="group" aria-label="Foco da análise">
+          <button class="chip chip--active" data-foco="geral">Geral</button>
+          <button class="chip" data-foco="faturamento">Faturamento</button>
+          <button class="chip" data-foco="dispensação">Dispensação</button>
+          <button class="chip" data-foco="pendências">Pendências</button>
+        </div>
+        <div class="button-row">
+          <button id="btn-insights" class="btn btn--primary">Gerar insights</button>
+          <button id="btn-audit" class="btn btn--ghost">Auditar base</button>
+        </div>
+        <div id="insights-result" class="result" aria-live="polite">—</div>
+      </section>
+
+      <section class="panel" aria-labelledby="ask-title">
+        <h2 id="ask-title">Perguntar à IA</h2>
+        <p class="hint">Ex.: fornecedores de Salvador, LMEs não autorizadas, medicamentos cadastrados.</p>
+        <input id="ask-input" class="ask-input" placeholder="Escreva sua pergunta…" />
+        <div class="button-row">
+          <button id="btn-ask" class="btn btn--primary">Perguntar</button>
+        </div>
+        <div id="ask-result" class="result" aria-live="polite">—</div>
+      </section>
+
+      <footer class="sidebar__footer">
+        <div id="log" class="log" aria-live="polite"></div>
+        <p class="disclaimer">Ferramenta de apoio. Não substitui o julgamento do farmacêutico responsável.</p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

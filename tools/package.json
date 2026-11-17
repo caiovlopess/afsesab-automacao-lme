@@ -1,0 +1,11 @@
+{
+  "name": "af-rea-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node playwright-capture.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.46.0"
+  }
+}

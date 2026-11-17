@@ -1,4 +1,35 @@
+# Segredos — nunca versionar
 .env
+.env.*
+!.env.example
+auth_token
+*.key
+*.pem
+
+# Ambientes virtuais e dependências
+.venv/
+venv/
+node_modules/
 __pycache__/
 *.pyc
-node_modules/
+.pytest_cache/
+*.egg-info/
+
+# Build e artefatos locais
+dist/
+release/
+*.exe
+*.lnk
+*.log
+Thumbs.db
+.DS_Store
+
+# Banco de dados local e token (são recriados pelos scripts de seed)
+*.db
+ai-backend/runtime/*
+!ai-backend/runtime/.gitkeep
+
+# Dump pesado de engenharia reversa do portal real (mantido apenas localmente)
+tools/recon/src/
+tools/recon/js/
+tools/recon/css/

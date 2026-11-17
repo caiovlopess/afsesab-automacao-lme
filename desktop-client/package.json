@@ -1,0 +1,39 @@
+{
+  "name": "af-copilot-desktop",
+  "version": "0.1.0",
+  "description": "Wrapper Electron Split-View para o portal AFSESAB com copiloto farmacêutico de IA",
+  "main": "dist/main/main.js",
+  "author": "Engenharia de Software / Segurança de Aplicações",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "npm run build && electron .",
+    "build": "tsc -p tsconfig.json && node scripts/copy-assets.js",
+    "watch": "tsc -p tsconfig.json --watch",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "package": "node scripts/package-app.mjs"
+  },
+  "build": {
+    "appId": "br.gov.ba.sesab.afcopilot",
+    "icon": "assets/app.ico",
+    "productName": "AF Copilot",
+    "files": [
+      "dist/**/*",
+      "src/renderer/**/*",
+      "package.json"
+    ],
+    "extraResources": [],
+    "directories": {
+      "output": "release"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {}
+}

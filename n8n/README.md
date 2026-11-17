@@ -36,10 +36,11 @@ para montar o fluxo está em [`../docs/guia_n8n.md`](../docs/guia_n8n.md).
 - Se um segredo aparecer no JSON, remova o valor da credencial/nó, exporte de
   novo e não faça commit do arquivo antigo.
 
-## Arquivo esperado
+## Arquivo exportado
 
-- `workflow_lme.json` — exportado pelo usuário após montar o fluxo; ainda não
-  existe nesta pasta.
+- `workflow_lme.json` — exportado da interface do n8n após montar o fluxo. A
+  varredura por `password`, `apiKey`, `api_key`, `Authorization`, `Bearer` e
+  `sk-` não encontrou segredos no arquivo.
 
-> PENDENTE: o usuário deve montar o workflow seguindo `docs/guia_n8n.md`,
-> exportar o JSON para esta pasta e avisar para a conferência de segredos.
+> PENDENTE: executar os casos C6–C8 de `docs/casos_de_teste.md` com o webhook
+> ativo e conferir as credenciais referenciadas no import.

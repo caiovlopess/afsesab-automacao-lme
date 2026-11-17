@@ -1,0 +1,567 @@
+{
+  "name": "Consulta segura LME - RAG local",
+    "active": false,
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "lme/consulta-segura",
+          "authentication": "basicAuth",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.2,
+        "position": [0, 0],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583901",
+        "name": "Webhook farmacêutico",
+        "webhookId": "cc048e28-4c1b-4a92-94c5-70f46aef8ad7",
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "gzQcwx3susNQr7mQ",
+            "name": "Webhook Auth - farmaceutico_sai"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "language": "javaScript",
+          "jsCode": "const input = $input.first().json;\nconst body = input.body && typeof input.body === 'object' && !Array.isArray(input.body) ? input.body : {};\nconst statuses = ['ATIVA', 'VENCIDA', 'PENDENTE', 'CANCELADA'];\nconst cidade = typeof body.cidade === 'string' ? body.cidade : '';\nconst status = typeof body.status === 'string' ? body.status : '';\nconst medicationTypeOk = body.medicamento === undefined || body.medicamento === null || typeof body.medicamento === 'string';\nconst medicamento = typeof body.medicamento === 'string' ? body.medicamento.trim() : null;\nconst perguntaOk = body.pergunta === undefined || typeof body.pergunta === 'string';\nconst pergunta = perguntaOk && typeof body.pergunta === 'string' ? body.pergunta.trim().slice(0, 1000) : '';\nconst permitido = cidade === 'Santo Antônio de Jesus' && statuses.includes(status) && medicationTypeOk && perguntaOk && (!medicamento || medicamento.length <= 100);\nconst motivo = permitido ? null : cidade !== 'Santo Antônio de Jesus' ? 'perfil sem permissão para a cidade solicitada' : !statuses.includes(status) ? 'status inválido' : !medicationTypeOk || (medicamento && medicamento.length > 100) ? 'medicamento inválido' : 'pergunta inválida';\nconst solicitacaoId = `${Date.now()}-${Math.random().toString(16).slice(2)}`;\nconst perguntaFinal = pergunta || `Consulte LMEs com status ${status}${medicamento ? ` para ${medicamento}` : ''} em ${cidade}.`;\nreturn [{ json: { solicitacao_id: solicitacaoId, usuario: 'teste_farmaceutico_sai', cidade, status, medicamento: medicamento || null, pergunta: perguntaFinal, view: permitido ? 'pacientes_sai' : null, permitido, motivo } }];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [240, 0],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583902",
+        "name": "Validar e autorizar"
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 4
+            },
+            "conditions": [
+              {
+                "id": "41aa1801-2db1-43f3-a08b-891b68583903",
+                "leftValue": "={{ String($json.permitido) }}",
+                "rightValue": "true",
+                "operator": {
+                  "type": "string",
+                  "operation": "equals",
+                  "name": "filter.operator.equals"
+                }
+              }
+            ],
+            "combinator": "and"
+          },
+          "options": {}
+        },
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2.4,
+        "position": [480, 0],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583904",
+        "name": "Consulta permitida?"
+      },
+      {
+        "parameters": {
+          "resource": "document",
+          "operation": "find",
+          "collection": "pacientes_sai",
+          "query": "={{ JSON.stringify($json.medicamento ? { 'lme.status': $json.status, 'lme.medicamento': $json.medicamento } : { 'lme.status': $json.status }) }}",
+          "options": {
+            "limit": 20
+          }
+        },
+        "type": "n8n-nodes-base.mongoDb",
+        "typeVersion": 1.5,
+        "position": [720, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583905",
+        "name": "Buscar na view da cidade",
+        "credentials": {
+          "mongoDb": {
+            "id": "Kjqs1Gvzf0p3EQIk",
+            "name": "MongoDB - farmaceutico_sai - lme"
+          }
+        },
+        "settings": {
+          "alwaysOutputData": true
+        }
+      },
+      {
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "language": "javaScript",
+          "jsCode": "const request = $('Validar e autorizar').first().json;\nconst mask = (value) => {\n  if (typeof value === 'string') return value.replace(/\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}/g, (cpf) => `***.***.***-${cpf.slice(-2)}`).replace(/\\b\\d{11}\\b/g, (cpf) => `***.***.***-${cpf.slice(-2)}`);\n  if (Array.isArray(value)) return value.map(mask);\n  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, mask(item)]));\n  return value;\n};\nconst registros = $input.all().map((item) => item.json).filter((record) => Object.keys(record).length > 0).map(mask);\nreturn [{ json: { ...request, registros } }];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [960, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583906",
+        "name": "Preparar dados autorizados"
+      },
+      {
+        "parameters": {
+          "operation": "read",
+          "fileSelector": "/home/node/regras_lme/*.md",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.readWriteFile",
+        "typeVersion": 1.1,
+        "position": [1200, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583907",
+        "name": "Ler regras fictícias"
+      },
+      {
+        "parameters": {
+          "dataType": "binary",
+          "binaryMode": "allInputData",
+          "loader": "textLoader",
+          "binaryDataKey": "data",
+          "textSplittingMode": "custom",
+          "options": {}
+        },
+        "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+        "typeVersion": 1.1,
+        "position": [1440, -20],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583908",
+        "name": "Carregar trechos das regras"
+      },
+      {
+        "parameters": {
+          "chunkSize": 500,
+          "chunkOverlap": 50,
+          "options": {}
+        },
+        "type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+        "typeVersion": 1,
+        "position": [1440, 160],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583909",
+        "name": "Dividir regras em trechos"
+      },
+      {
+        "parameters": {
+          "mode": "insert",
+          "memoryKey": {
+            "mode": "list",
+            "value": "lme-regras-ficticias"
+          },
+          "embeddingBatchSize": 32,
+          "clearStore": true
+        },
+        "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+        "typeVersion": 1.4,
+        "position": [1680, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583910",
+        "name": "Indexar regras em memória"
+      },
+      {
+        "parameters": {
+          "model": "nomic-embed-text"
+        },
+        "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+        "typeVersion": 1,
+        "position": [1680, 40],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583911",
+        "name": "Embeddings locais"
+      },
+      {
+        "parameters": {
+          "mode": "retrieve",
+          "memoryKey": {
+            "mode": "list",
+            "value": "lme-regras-ficticias"
+          },
+          "topK": 4,
+          "includeDocumentMetadata": true
+        },
+        "type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+        "typeVersion": 1.4,
+        "position": [1920, 140],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583912",
+        "name": "Consultar regras em memória"
+      },
+      {
+        "parameters": {
+          "topK": 4
+        },
+        "type": "@n8n/n8n-nodes-langchain.retrieverVectorStore",
+        "typeVersion": 1,
+        "position": [2160, 140],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583913",
+        "name": "Recuperar trechos relevantes"
+      },
+      {
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "language": "javaScript",
+          "jsCode": "const request = $('Preparar dados autorizados').first().json;\nreturn [{ json: { question: request.pergunta } }];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [1920, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583914",
+        "name": "Preparar pergunta para RAG"
+      },
+      {
+        "parameters": {
+          "promptType": "define",
+          "query": "={{ $json.question }}",
+          "text": "={{ $json.question }}",
+          "options": {
+            "systemPromptTemplate": "={{ 'Responda em português usando exclusivamente os trechos de regras fictícias recuperados e os registros autorizados abaixo. Nunca invente dados, nunca revele CPF completo, não conclua além dos campos consultados. Se faltar informação, diga: Não informado nas fontes/dados consultados. As regras são fictícias, não são orientação oficial ou clínica. Responda somente neste formato: Resultado: <resposta curta ou recusa>\\nFonte: <documento e/ou campos consultados; ou nenhuma>\\nObservação: <limitação relevante; ou nenhuma>\\n\\nRegistros autorizados (CPF mascarado): ' + JSON.stringify($(\"Preparar dados autorizados\").first().json.registros) + '\\n\\nContexto das regras recuperadas: {context}\\n\\nPergunta: {question}' }}"
+          }
+        },
+        "type": "@n8n/n8n-nodes-langchain.chainRetrievalQa",
+        "typeVersion": 1.7,
+        "position": [2160, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583915",
+        "name": "Responder com RAG local"
+      },
+      {
+        "parameters": {
+          "model": "qwen2.5:3b",
+          "options": {
+            "temperature": 0.1,
+            "numCtx": 4096,
+            "numPredict": 256
+          }
+        },
+        "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+        "typeVersion": 1,
+        "position": [2160, 40],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583916",
+        "name": "Modelo local Ollama"
+      },
+      {
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "language": "javaScript",
+          "jsCode": "const request = $('Preparar dados autorizados').first().json;\nconst resposta = typeof $input.first().json.response === 'string' ? $input.first().json.response : 'Resultado: Não informado nas fontes/dados consultados.\\nFonte: nenhuma\\nObservação: nenhuma';\nreturn [{ json: { solicitacao_id: request.solicitacao_id, evento: 'consulta_lme_n8n', usuario: request.usuario, pergunta: { cidade: request.cidade, status: request.status, medicamento: request.medicamento }, view: request.view, permitido: true, motivo: null, registros_retornados: request.registros.length, criado_em: new Date().toISOString(), response: { solicitacao_id: request.solicitacao_id, permitido: true, resposta } } }];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [2400, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583917",
+        "name": "Registrar consulta autorizada"
+      },
+      {
+        "parameters": {
+          "resource": "document",
+          "operation": "insert",
+          "collection": "audit_log",
+          "fields": "solicitacao_id,evento,usuario,pergunta,view,permitido,motivo,registros_retornados,criado_em",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.mongoDb",
+        "typeVersion": 1.5,
+        "position": [2640, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583918",
+        "name": "Auditar consulta autorizada",
+        "credentials": {
+          "mongoDb": {
+            "id": "ZucOVbQD71kQecc3",
+            "name": "MongoDB - workflow_audit"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "respondWith": "json",
+          "responseBody": "={{ $('Registrar consulta autorizada').first().json.response }}",
+          "options": {
+            "responseCode": 200
+          }
+        },
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.1,
+        "position": [2880, -180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583919",
+        "name": "Responder sucesso"
+      },
+      {
+        "parameters": {
+          "mode": "runOnceForAllItems",
+          "language": "javaScript",
+          "jsCode": "const request = $input.first().json;\nreturn [{ json: { solicitacao_id: request.solicitacao_id, evento: 'consulta_lme_n8n', usuario: request.usuario, pergunta: { cidade: request.cidade, status: request.status || null, medicamento: request.medicamento || null }, view: null, permitido: false, motivo: request.motivo, registros_retornados: 0, criado_em: new Date().toISOString(), response: { solicitacao_id: request.solicitacao_id, permitido: false, motivo: request.motivo } } }];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [720, 180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583920",
+        "name": "Registrar tentativa negada"
+      },
+      {
+        "parameters": {
+          "resource": "document",
+          "operation": "insert",
+          "collection": "audit_log",
+          "fields": "solicitacao_id,evento,usuario,pergunta,view,permitido,motivo,registros_retornados,criado_em",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.mongoDb",
+        "typeVersion": 1.5,
+        "position": [960, 180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583921",
+        "name": "Auditar tentativa negada",
+        "credentials": {
+          "mongoDb": {
+            "id": "ZucOVbQD71kQecc3",
+            "name": "MongoDB - workflow_audit"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "respondWith": "json",
+          "responseBody": "={{ $('Registrar tentativa negada').first().json.response }}",
+          "options": {
+            "responseCode": 403
+          }
+        },
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.1,
+        "position": [1200, 180],
+        "id": "41aa1801-2db1-43f3-a08b-891b68583922",
+        "name": "Responder negado"
+      }
+    ],
+    "connections": {
+      "Webhook farmacêutico": {
+        "main": [
+          [
+            {
+              "node": "Validar e autorizar",
+              "type": "main",
+              "index": 0
+          }
+        ]
+        ]
+      },
+      "Validar e autorizar": {
+        "main": [
+          [
+            {
+              "node": "Consulta permitida?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Consulta permitida?": {
+        "main": [
+          [
+            {
+              "node": "Buscar na view da cidade",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Registrar tentativa negada",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Buscar na view da cidade": {
+        "main": [
+          [
+            {
+              "node": "Preparar dados autorizados",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Preparar dados autorizados": {
+        "main": [
+          [
+            {
+              "node": "Ler regras fictícias",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Ler regras fictícias": {
+        "main": [
+          [
+            {
+              "node": "Indexar regras em memória",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "Carregar trechos das regras",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Carregar trechos das regras": {
+        "ai_document": [
+          [
+            {
+              "node": "Indexar regras em memória",
+              "type": "ai_document",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Dividir regras em trechos": {
+        "ai_textSplitter": [
+          [
+            {
+              "node": "Carregar trechos das regras",
+              "type": "ai_textSplitter",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Embeddings locais": {
+        "ai_embedding": [
+          [
+            {
+              "node": "Indexar regras em memória",
+              "type": "ai_embedding",
+              "index": 0
+            },
+            {
+              "node": "Consultar regras em memória",
+              "type": "ai_embedding",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Indexar regras em memória": {
+        "main": [
+          [
+            {
+              "node": "Preparar pergunta para RAG",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Consultar regras em memória": {
+        "ai_vectorStore": [
+          [
+            {
+              "node": "Recuperar trechos relevantes",
+              "type": "ai_vectorStore",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Recuperar trechos relevantes": {
+        "ai_retriever": [
+          [
+            {
+              "node": "Responder com RAG local",
+              "type": "ai_retriever",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Preparar pergunta para RAG": {
+        "main": [
+          [
+            {
+              "node": "Responder com RAG local",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Modelo local Ollama": {
+        "ai_languageModel": [
+          [
+            {
+              "node": "Responder com RAG local",
+              "type": "ai_languageModel",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Responder com RAG local": {
+        "main": [
+          [
+            {
+              "node": "Registrar consulta autorizada",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Registrar consulta autorizada": {
+        "main": [
+          [
+            {
+              "node": "Auditar consulta autorizada",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Auditar consulta autorizada": {
+        "main": [
+          [
+            {
+              "node": "Responder sucesso",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Registrar tentativa negada": {
+        "main": [
+          [
+            {
+              "node": "Auditar tentativa negada",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Auditar tentativa negada": {
+        "main": [
+          [
+            {
+              "node": "Responder negado",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1",
+      "binaryMode": "separate"
+    },
+    "tags": []
+}
